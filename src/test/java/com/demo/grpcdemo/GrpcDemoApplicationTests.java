@@ -1,4 +1,4 @@
-package com.demo.GrpcDemo;
+package com.demo.grpcdemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

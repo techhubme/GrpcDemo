@@ -1,0 +1,19 @@
+syntax = "proto3";
+option java_multiple_files = true;
+
+package com.demo.grpc.services.order;
+
+/* Defines the GRPC SampleService */
+service SampleService{
+    rpc operate(stream RequestMessage) returns (stream ResponseMessage){}
+}
+
+/* Defines the GRPC RequestMessage */
+message RequestMessage{
+  string message=1;
+}
+
+/* Defines the GRPC ResponseMessage */
+message ResponseMessage{
+  string message=1;
+}
