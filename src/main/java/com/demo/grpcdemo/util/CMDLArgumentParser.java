@@ -30,8 +30,8 @@ public class CMDLArgumentParser {
         for (String argument: args) {
             if (argument.startsWith(Constant.COMMAND_ARG_PREFIX)) {
                 String[] keyValue = argument.split(Constant.COMMAND_ARG_SPLITER);
-                if(keyValue.length == Constant.NUMBER_2) {
-                    COMMAND_LINE_ARGS.put(keyValue[Constant.NUMBER_0], keyValue[Constant.NUMBER_1]);
+                if(keyValue.length == 2) {
+                    COMMAND_LINE_ARGS.put(keyValue[0], keyValue[1]);
                 }
             }
         }
@@ -47,6 +47,6 @@ public class CMDLArgumentParser {
         if (COMMAND_LINE_ARGS.containsKey(argument)) {
             return COMMAND_LINE_ARGS.get(argument);
         }
-        throw new RuntimeException(Constant.CMDL_ARG_NOT_FOUND);
+        return "";
     }
 }
