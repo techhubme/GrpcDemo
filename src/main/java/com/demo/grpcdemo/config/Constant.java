@@ -61,7 +61,7 @@ public final class Constant {
     public static final String SYSTEM_ENV_GRPC_PORT = "GRPC_SERVER_PORT";
 
     /* LOG_MSG_PATTERN */
-    public static final String LOG_MSG_PATTERN = "{} : {}";
+    public static final String LOG_MSG_PATTERN = "[ {} ] : {}";
 
     /**
      * Number constants declaration
